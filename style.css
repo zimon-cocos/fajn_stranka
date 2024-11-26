@@ -1,29 +1,48 @@
 body{
     display: flex;
     height: 100vh;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     margin: 0;
+    overflow: hidden;
+    background-color: black;
+    transition: all 2s;
 }
 
-#video_div{
+#popoutNavbar{
     display: flex;
-    z-index: -1;
-}
-#background_vid{
-    width: 100%;
-    height: auto;
- }
-
-#overlay_text{
+    flex-direction: column;
     color: black;
-    font-size: 250px;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s;
+
+}
+
+#kategVeci{
+    display: flex;
+    gap: 12px;
+    background-color: gray;
+    transition: all 2s;
+    max-height: 0px;
+}
+
+
+#spark {
+    width: 200px;
+    aspect-ratio: 1;
+    background: green;
+    clip-path: polygon(40% 40%, 50% 0, 60% 40%, 100% 50%,
+                       60% 60%, 50% 100%, 40% 60%, 0 50%);
+  }
+  
+#onclickShow{
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    position: fixed;
-    width: 100%;
-    padding: 20px;
+    font-size: 60px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
 }
 
 /*@media (max-width: 750px) {
@@ -34,4 +53,11 @@ body{
        background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
        background-size: cover;
     }
- }*/
+
+*//*#LeTriangel{
+    width: 0;
+    height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #555;    
+}*/
